@@ -1,4 +1,14 @@
-# <img src="https://avatars1.githubusercontent.com/u/29209318?s=32&v=4" width="32" height="32" alt="woeplanet">&nbsp;py-whosonfirst-placetypes
+# <img src="https://avatars1.githubusercontent.com/u/29209318?s=32&v=4" width="32" height="32" alt="woeplanet">&nbsp;py-woeplanet-placetypes
+
+# The Really Short Version
+
+_Forking GeoPlanet one place type at a time_.
+
+# The Short Version
+
+WoePlanet is Where On Earth (AKA WOE, also AKA GeoPlanet) data, smushed up with coordinate and boundary data from Flickr Shapes, Quattroshapes and Natural Earth Data (that's fancy talk for _polygons_) as well as concordances and other metadata rescued from `woe.spum.org` before it died and went offline.
+
+# The Longer Version
 
 Simple Python wrapper for accessing WoePlanet/GeoPlanet placetypes in Elasticsearch.
 
