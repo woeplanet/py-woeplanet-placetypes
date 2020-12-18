@@ -18,7 +18,7 @@ class PlaceTypes(object):
             else:
                 return None
 
-        except elasticsearch.exceptions.NotFoundError as error:
+        except elasticsearch.exceptions.NotFoundError as _:
             return None
 
     def by_name(self, name):
@@ -44,3 +44,16 @@ class PlaceTypes(object):
             return resp['hits']['hits'][0]['_source']
 
         return None
+    
+    def is_valid(self, value):
+        if isinstance(value, int):
+            if self.by_id(value):
+                return True
+            return False
+        
+        elif isinstance(value, str):
+            if self.by_name(value):
+                return True
+            return False
+
+        return False
